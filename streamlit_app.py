@@ -10,7 +10,7 @@ st.write(
 )
  
 import streamlit as st
-cnx = st.connection("snowflake")
+cnx = st.connection("")
 session = cnx.session() 
 
 
