@@ -9,8 +9,9 @@ st.write(
     """
 )
  
-
- 
+import streamlit as st
+cnx = st.connection("snowflake")
+session = cnx.session() 
 
 
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
